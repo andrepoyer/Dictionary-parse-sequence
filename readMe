@@ -1,0 +1,32 @@
+This program frist sets up the file path for the input dictionary 
+file and the output files (Sequence.txt and Words.txt).
+
+It then defines an expression to match valid word charathers using 
+the "re" library (letters only), and a function to extract unique 
+sequences of four letter from a word. 
+
+The program reads through the dictionary file line by line, extracting
+on each line the unique sequences of 4 letters. He then grabs these
+four letters and compare them with the existing lists for unique and
+nonunique sequences. If a sequence is found to be nonunique it is 
+removed from the unique set and it's corresponding word is also removed
+from the words dictionary. If a sequence is found to be unique it is
+added to the unique set and it's corresponding word is added to the
+dictionary as well. 
+
+At the end the program writes the sorted unique sequences to the sequences
+file, and writes the corresponding words to the words file in the same order. 
+
+
+###########################
+Observations:
+###########################
+To run the program you just need a file ".txt" with words in it. The file needs
+to be on the same directory of the program and after that you just have to run 
+the program and the output will be two new files "sequences.txt" and "words.txt"
+
+You can replace the dictionary file just need to use the same name for it or
+adjust the code to your file's name on line 4.
+
+You need Python on your computer to run this program but you can use Google Colab 
+Research with no need to install Python. 
